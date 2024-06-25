@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Fleur</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Portfolio</h1>
+        <button onclick="myFunction()">donker/licht</button>
+    </header>
+    <main>
+        <h2>Dit ben ik</h2>
+        <p>Hallo ik ben Fleur, dit zijn een paar plaatjes die gewoon leuk zijn.</p>
+        <div class="thumbnail-grid">
+
+            <button class="thumbnail" onclick='showModal("modal1")'>
+                <img src="img/opa.jpeg" alt="Thumbnail 1">
+            </button>
+            <dialog id="modal1">
+                <button onclick='closeModal("modal1")'>Close</button>
+                <p>in blok 1.1 kregen wij de opdracht om foto's te maken. Klik op de link om mijn foto's te zien.</p>
+                <a href="foto.html">gallery</a>
+            </dialog>
+
+            <button class="thumbnail" onclick='showModal("modal2")'>
+                <img src="img/fleur.png" alt="Thumbnail 2">
+            </button>
+            <dialog id="modal2">
+                <button onclick='closeModal("modal2")'>Close</button>
+                <p>in blok 1.2 kregen wij de opdracht om een leuke sticker te coderen door middel van P5.</p>
+            </dialog>
+
+            <button class="thumbnail" onclick='showModal("modal3")'>
+                <img src="img/readrebel.png" alt="Thumbnail 3">
+            </button>
+            <dialog id="modal3">
+                <button onclick='closeModal("modal3")'>Close</button>
+                <p>We moesten een campange verzinnen om kinderen meer te laten lezen</p>
+            </dialog>
+
+            <button class="thumbnail" onclick='showModal("modal4")'>
+                <img src="img/readrebel.png" alt="Thumbnail 3">
+            </button>
+            <dialog id="modal4">
+                <button onclick='closeModal("modal4")'>Close</button>
+                <p>,eow</p>
+            </dialog>
+            
+        </div>
+        <div>
+            <h2>Video</h2>
+            <div class="video-container">
+                <video loop muted>
+                    <source src="img/duck.mp4" type="video/mp4">
+                </video>
+                <a class="btn-play">Play</a>
+            </div>
+        </div>
+        <h2>Formulier</h2>
+        <form id="contactForm">
+            <input type="datetime-local" id="appointmentTime">
+            <input type="email" id="email">
+            <input type="submit" value="Verstuur" >
+        </form>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
